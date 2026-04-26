@@ -59,3 +59,31 @@ if(mouseX >= 170 && mouseX <= width - 60 && mouseY >= modY && mouseY <= modY + 2
 public float easeOutQuad(float t) {
     return 1 - (1 - t) * (1 - t);
 }
+List<Module> mods = ModuleManager.getModulesByCategory(
+    Category.valueOf(categories[selectedCategory].toUpperCase())
+);
+
+int modY = 50;
+for(Module m : mods) {
+    drawRoundedRect(170, modY, width - 60, modY + 20, 6,
+            m.isEnabled() ? 0xFF6A5ACD : 0xFF2A2A2A);
+
+    fontRendererObj.drawString(m.getName(), 180, modY + 6, 0xFFFFFFFF);
+
+    modY += 25;
+}
+@Override
+public void mouseClicked(int mouseX, int mouseY, int button) {
+    List<Module> mods = ModuleManager.getModulesByCategory(
+        Category.valueOf(categories[selectedCategory].toUpperCase())
+    );
+
+    int modY = 50;
+    for(Module m : mods) {
+        if(mouseX >= 170 && mouseX <= width - 60 &&
+           mouseY >= modY && mouseY <= modY + 20) {
+            m.toggle();
+        }
+        modY += 25;
+    }
+}
