@@ -14,7 +14,7 @@ public class ModuleManager {
         modules.add(new Xray());
         modules.add(new PlayerESP());
         modules.add(new Reach());
-        module.add(new AntiAntiCheat());
+        module.add(new Scaffold());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
