@@ -16,6 +16,7 @@ public class ModuleManager {
         modules.add(new Reach());
         modules.add(new Scaffold());
         modules.add(new Enchant());
+        modules.add(new Timer());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
