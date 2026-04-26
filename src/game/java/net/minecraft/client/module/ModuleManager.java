@@ -14,7 +14,8 @@ public class ModuleManager {
         modules.add(new Xray());
         modules.add(new PlayerESP());
         modules.add(new Reach());
-        module.add(new Scaffold());
+        modules.add(new Scaffold());
+        modules.add(new Enchant());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
