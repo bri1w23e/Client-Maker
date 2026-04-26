@@ -2467,3 +2467,6 @@ public class Minecraft implements IThreadListener {
 	}
 
 }
+if (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT)) {
+    mc.displayGuiScreen(new MeteorGui());
+}
