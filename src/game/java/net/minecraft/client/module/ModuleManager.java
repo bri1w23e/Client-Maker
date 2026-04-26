@@ -13,6 +13,8 @@ public class ModuleManager {
         modules.add(new Triggerbot());
         modules.add(new Xray());
         modules.add(new PlayerESP());
+        modules.add(new Reach());
+        module.add(new AntiAntiCheat());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
