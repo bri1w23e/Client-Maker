@@ -59,6 +59,3 @@ if(mouseX >= 170 && mouseX <= width - 60 && mouseY >= modY && mouseY <= modY + 2
 public float easeOutQuad(float t) {
     return 1 - (1 - t) * (1 - t);
 }
-if (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT)) {
-    mc.displayGuiScreen(new MeteorGui());
-}
