@@ -12,6 +12,7 @@ public class ModuleManager {
         modules.add(new Fullbright());
         modules.add(new Triggerbot());
         modules.add(new Xray());
+        modules.add(new PlayerESP());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
