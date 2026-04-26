@@ -1,6 +1,6 @@
 public class Reach extends Module {
 
-    private double reachDistance = 4.5;
+    private double reachDistance = 5;
 
     public Reach() {
         super("Reach", Category.COMBAT, 0);
