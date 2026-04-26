@@ -10,6 +10,7 @@ public class ModuleManager {
         modules.add(new KillAura());
         modules.add(new Fly());
         modules.add(new Fullbright());
+        modules.add(new TriggerBot());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
