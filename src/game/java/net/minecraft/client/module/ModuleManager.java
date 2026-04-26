@@ -11,6 +11,7 @@ public class ModuleManager {
         modules.add(new Fly());
         modules.add(new Fullbright());
         modules.add(new Triggerbot());
+        modules.add(new Xray());
     }
 
     public static List<Module> getModulesByCategory(Category c) {
